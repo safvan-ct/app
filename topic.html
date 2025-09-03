@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Topbar (mobile & desktop search) -->
+    <div class="topbar d-flex align-items-center justify-content-between">
+        <a href="chapter.html" class="me-2"><i class="fas fa-arrow-left"></i></a>
+        <h5 class="fw-bold mb-0">Dashboard</h5>
+        <form class="d-flex ms-3" role="search" style="max-width: 300px;">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
+                aria-label="Search">
+            <button class="btn btn-sm btn-outline-primary"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- App Header -->
+    <div class="course-hero d-none">
+        <div class="course-details">
+            <h3>Modern Web Development</h3>
+        </div>
+    </div>
+
+    <div class="container my-4 pb-5">
+        <div class="lesson-header">
+            <h3>Meelad (Mawlid)</h3>
+            <p class="text-muted mb-0">Understanding the Islamic perspective on celebrating the Prophet's birthday.</p>
+        </div>
+
+        <div class="lesson-body">
+            <h5>Introduction</h5>
+            <p>Many Muslims around the world celebrate the Prophet’s birthday (Meelad or Mawlid). Scholars, however,
+                differ on whether this practice has a basis in Islam or if it is a later innovation (Bid'ah).</p>
+
+            <h5>Quranic Perspective</h5>
+            <p>The Qur’an does not prescribe a specific day of celebration for the Prophet ﷺ. Instead, it emphasizes
+                following his Sunnah and living by his guidance.</p>
+
+            <h5>Hadith Evidence</h5>
+            <p>There is no authentic Hadith where the Prophet ﷺ or his companions celebrated his birthday. Instead, the
+                Prophet ﷺ fasted on Mondays and explained that it was the day he was born.</p>
+
+            <h5>Scholarly Views</h5>
+            <ul>
+                <li><strong>Some scholars</strong> allow Mawlid as long as it is celebrated with Quran recitation and
+                    remembrance of Allah.</li>
+                <li><strong>Other scholars</strong> consider it a Bid'ah (innovation) since it was not practiced by the
+                    Prophet ﷺ or the early generations.</li>
+            </ul>
+
+            <h5>Conclusion</h5>
+            <p>While Meelad is a widespread practice, Muslims should be cautious and prioritize authentic Sunnah
+                practices. Love for the Prophet ﷺ is best expressed by following his teachings, not introducing new acts
+                of worship.</p>
+        </div>
+
+        <h6 class="fw-bold mt-4 mb-3">Other Lessons</h6>
+
+        <!-- Lessons -->
+        <a href="topic.html" class="lesson-item text-decoration-none text-dark">
+            <span><i class="fas fa-play-circle me-2"></i> Introduction to HTML</span>
+            <small class="text-muted">5 min</small>
+        </a>
+        <div class="lesson-item">
+            <span><i class="fas fa-play-circle me-2"></i> CSS Basics</span>
+            <small class="text-muted">10 min</small>
+        </div>
+        <div class="lesson-item">
+            <span><i class="fas fa-play-circle me-2"></i> JavaScript Fundamentals</span>
+            <small class="text-muted">12 min</small>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg rounded-circle shadow" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- References Button -->
+        <button type="button" class="btn btn-success btn-lg rounded-circle shadow" id="btn-references"
+            data-bs-toggle="offcanvas" data-bs-target="#referencesPanel">
+            <i class="fas fa-book-open"></i>
+        </button>
+
+        <!-- References Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="referencesPanel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">References</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mb-3">
+                    <h6>📖 Quran</h6>
+                    <blockquote class="blockquote small">
+                        <p>وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا</p>
+                        <footer class="blockquote-footer">Surah Al-Hashr 59:7</footer>
+                    </blockquote>
+                </div>
+                <div class="mb-3">
+                    <h6>🕌 Hadith</h6>
+                    <blockquote class="blockquote small">
+                        <p>“Whoever innovates something in this matter of ours that is not part of it, it will be
+                            rejected.”</p>
+                        <footer class="blockquote-footer">Sahih Bukhari & Muslim</footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <h6>📚 Scholars</h6>
+                    <p class="small text-muted">Imam Malik: “Whatever was not part of the religion at that time will not
+                        be part of the religion today.”</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overview Button -->
+        <button type="button" class="btn btn-info btn-lg rounded-circle shadow" id="btn-overview"
+            data-bs-toggle="offcanvas" data-bs-target="#overviewPanel">
+            <i class="fas fa-list"></i>
+        </button>
+
+        <!-- Overview Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="overviewPanel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Lesson Overview</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h6>📌 Course: Festivals in Islam</h6>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Meelad (Mawlid) <span class="badge bg-primary">Current</span>
+                    </li>
+                    <li class="list-group-item">Eid al-Fitr</li>
+                    <li class="list-group-item">Eid al-Adha</li>
+                    <li class="list-group-item">Laylatul Qadr</li>
+                    <li class="list-group-item">Ramadan</li>
+                </ul>
+
+                <h6>📖 Progress</h6>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-success" style="width:40%">40%</div>
+                </div>
+                <small class="text-muted">2 of 5 lessons completed</small>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="#"><i class="fas fa-book"></i>Quran</a>
+        <a href="#"><i class="fas fa-list"></i>Hadith</a>
+        <a href="chapters.html" class="active"><i class="fas fa-question"></i>Topics</a>
+        <a href="#"><i class="fas fa-star"></i>Wishlist</a>
+        <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let backToTop = document.getElementById("btn-back-to-top");
+
+        window.addEventListener("scroll", function () {
+            if (document.documentElement.scrollTop > 200) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        // Smooth scroll to top
+        backToTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <style>
+        /* Common circle button style */
+        #btn-back-to-top,
+        #btn-references,
+        #btn-overview {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1050;
+        }
+
+        /* Right side (Back to Top – scroll aware) */
+        #btn-back-to-top {
+            position: fixed;
+            right: 5px;
+            bottom: 80px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        #btn-back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Left side (always visible) */
+        #btn-overview,
+        #btn-references {
+            position: fixed;
+            left: 5px;
+            transition: all 0.3s ease;
+        }
+
+        #btn-overview {
+            bottom: 80px;
+        }
+
+        #btn-references {
+            bottom: 150px;
+        }
+    </style>
+</body>
+
+</html>

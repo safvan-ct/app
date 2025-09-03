@@ -13,6 +13,7 @@
 <body>
     <!-- Topbar (mobile & desktop search) -->
     <div class="topbar d-flex align-items-center justify-content-between">
+        <a href="index.html" class="me-2"><i class="fas fa-arrow-left"></i></a>
         <h5 class="fw-bold mb-0">Dashboard</h5>
         <form class="d-flex ms-3" role="search" style="max-width: 300px;">
             <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
@@ -22,28 +23,46 @@
     </div>
 
     <!-- App Header -->
-    <div class="app-header">
-        <h5 class="mb-1">Welcome back 👋</h5>
-        <h4 class="fw-bold">Your Learning Dashboard</h4>
+    <div class="course-hero">
+        <div class="course-details">
+            <h3>Modern Web Development</h3>
+            <p class="text-white">Learn how to build responsive websites using HTML, CSS, JavaScript, and Bootstrap 5
+                with real-world projects.</p>
+        </div>
     </div>
 
     <div class="container my-4 pb-5">
-
-        <!-- Continue Learning -->
-        <h5 class="mb-3">Continue Learning</h5>
-        <div class="course-card mb-3">
-            <img src="https://picsum.photos/400/200?random=1" class="course-thumb" alt="">
-            <h6 class="fw-bold">Modern Web Development</h6>
-            <p class="text-muted small mb-1">By John Doe</p>
-            <div class="progress mb-2">
-                <div class="progress-bar bg-primary" style="width: 60%"></div>
-            </div>
-            <small class="text-muted">60% completed</small>
-        </div>
-
         <!-- Featured Courses -->
-        <h5 class="mb-3 mt-4">Featured Courses</h5>
+        <h5 class="mb-3 mt-4">Featured Topics</h5>
         <div class="row g-3">
+            <div class="col-6 col-md-4">
+                <div class="course-card">
+                    <img src="https://picsum.photos/400/200?random=2" class="course-thumb" alt="">
+                    <h6 class="fw-bold"><a href="chapter.html" class="text-dark">നബിദിനം (റ. അവ്വൽ 12)</a></h6>
+                    <p class="text-muted small">12 Lessons</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="course-card">
+                    <img src="https://picsum.photos/400/200?random=3" class="course-thumb" alt="">
+                    <h6 class="fw-bold">മൗലിദ് പാരായണം</h6>
+                    <p class="text-muted small">18 Lessons</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="course-card">
+                    <img src="https://picsum.photos/400/200?random=2" class="course-thumb" alt="">
+                    <h6 class="fw-bold">നബിദിനം (റ. അവ്വൽ 12)</h6>
+                    <p class="text-muted small">12 Lessons</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="course-card">
+                    <img src="https://picsum.photos/400/200?random=3" class="course-thumb" alt="">
+                    <h6 class="fw-bold">മൗലിദ് പാരായണം</h6>
+                    <p class="text-muted small">18 Lessons</p>
+                </div>
+            </div>
             <div class="col-6 col-md-4">
                 <div class="course-card">
                     <img src="https://picsum.photos/400/200?random=2" class="course-thumb" alt="">
@@ -59,24 +78,14 @@
                 </div>
             </div>
         </div>
-
-        <!-- Categories -->
-        <h5 class="mb-3 mt-4">Categories</h5>
-        <div class="d-flex gap-2 flex-wrap">
-            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">Development</span>
-            <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Design</span>
-            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">Business</span>
-            <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">Languages</span>
-        </div>
-
     </div>
 
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
-        <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
         <a href="#"><i class="fas fa-book"></i>Quran</a>
         <a href="#"><i class="fas fa-list"></i>Hadith</a>
-        <a href="chapters.html"><i class="fas fa-question"></i>Topics</a>
+        <a href="chapters.html" class="active"><i class="fas fa-question"></i>Topics</a>
         <a href="#"><i class="fas fa-star"></i>Wishlist</a>
         <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->
     </div>
