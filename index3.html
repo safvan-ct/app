@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --clr-primary: #0d6efd;
+            --clr-bg: #f8f9fa;
+            --clr-surface: #ffffff;
+            --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            background: var(--clr-bg);
+            font-family: "Inter", sans-serif;
+        }
+
+        /* Sidebar (desktop only) */
+        .sidebar {
+            background: var(--clr-surface);
+            height: 100vh;
+            width: 240px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 1rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .sidebar h4 {
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            color: #6c757d;
+            text-decoration: none;
+            margin-bottom: .5rem;
+            transition: 0.2s;
+        }
+
+        .sidebar a.active,
+        .sidebar a:hover {
+            background: var(--clr-primary);
+            color: #fff;
+        }
+
+        /* Top search bar */
+        .topbar {
+            background: var(--clr-surface);
+            padding: .75rem 1rem;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        /* Course cards */
+        .course-card {
+            background: var(--clr-surface);
+            border-radius: .75rem;
+            box-shadow: var(--shadow-md);
+            padding: 1rem;
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .course-thumb {
+            border-radius: .75rem;
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            margin-bottom: .75rem;
+        }
+
+        /* Bottom nav (mobile only) */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--clr-surface);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            justify-content: space-around;
+            padding: .5rem 0;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            z-index: 999;
+        }
+
+        .bottom-nav a {
+            text-align: center;
+            color: #6c757d;
+            font-size: .85rem;
+            text-decoration: none;
+            flex: 1;
+        }
+
+        .bottom-nav a i {
+            display: block;
+            font-size: 1.3rem;
+            margin-bottom: 2px;
+        }
+
+        .bottom-nav a.active {
+            color: var(--clr-primary);
+            font-weight: 600;
+        }
+
+        /* Responsive rules */
+        @media (min-width: 992px) {
+            .sidebar {
+                display: block;
+            }
+
+            .bottom-nav {
+                display: none;
+            }
+
+            .main-content {
+                margin-left: 240px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .sidebar {
+                display: none;
+            }
+
+            .topbar {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar (desktop only) -->
+    <div class="sidebar d-none d-lg-block">
+        <h4>EduLearn</h4>
+        <a href="index.html" class="active"><i class="fas fa-home me-2"></i> Home</a>
+        <a href="course.html"><i class="fas fa-book me-2"></i> Courses</a>
+        <a href="#"><i class="fas fa-star me-2"></i> Wishlist</a>
+        <a href="#"><i class="fas fa-user me-2"></i> Profile</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Topbar (mobile & desktop search) -->
+        <div class="topbar">
+            <input type="text" class="form-control" placeholder="Search courses...">
+        </div>
+
+        <div class="container my-4 pb-5">
+            <!-- Continue Learning -->
+            <h5 class="mb-3">Continue Learning</h5>
+            <div class="course-card mb-3">
+                <img src="https://picsum.photos/400/200?random=1" class="course-thumb" alt="">
+                <h6 class="fw-bold">Modern Web Development</h6>
+                <p class="text-muted small mb-1">By John Doe</p>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-primary" style="width: 60%"></div>
+                </div>
+                <small class="text-muted">60% completed</small>
+            </div>
+
+            <!-- Featured Courses -->
+            <h5 class="mb-3 mt-4">Featured Courses</h5>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/400/200?random=2" class="course-thumb" alt="">
+                        <h6 class="fw-bold">UI/UX Design</h6>
+                        <p class="text-muted small">12 Lessons</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/400/200?random=3" class="course-thumb" alt="">
+                        <h6 class="fw-bold">Python Basics</h6>
+                        <p class="text-muted small">18 Lessons</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6">
+                    <div class="course-card">
+                        <img src="https://picsum.photos/400/200?random=4" class="course-thumb" alt="">
+                        <h6 class="fw-bold">Business Essentials</h6>
+                        <p class="text-muted small">9 Lessons</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation (mobile only) -->
+    <div class="bottom-nav d-lg-none">
+        <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
+        <a href="course.html"><i class="fas fa-book"></i>Courses</a>
+        <a href="#"><i class="fas fa-star"></i>Wishlist</a>
+        <a href="#"><i class="fas fa-user"></i>Profile</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

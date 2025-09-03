@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --clr-primary: #0d6efd;
+            --clr-bg: #f8f9fa;
+            --clr-surface: #ffffff;
+            --radius-xl: 1rem;
+            --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            background: var(--clr-bg);
+            font-family: "Inter", sans-serif;
+        }
+
+        /* App header */
+        .app-header {
+            background: var(--clr-primary);
+            color: #fff;
+            padding: 1rem;
+            border-bottom-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Course cards */
+        .course-card {
+            background: var(--clr-surface);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+            padding: 1rem;
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .course-thumb {
+            border-radius: var(--radius-xl);
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            margin-bottom: .75rem;
+        }
+
+        .progress {
+            height: 6px;
+            border-radius: 3px;
+        }
+
+        /* Bottom navigation */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--clr-surface);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            justify-content: space-around;
+            padding: .5rem 0;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            z-index: 999;
+        }
+
+        .bottom-nav a {
+            text-align: center;
+            color: #6c757d;
+            font-size: .85rem;
+            text-decoration: none;
+            flex: 1;
+        }
+
+        .bottom-nav a i {
+            display: block;
+            font-size: 1.3rem;
+            margin-bottom: 2px;
+        }
+
+        .bottom-nav a.active {
+            color: var(--clr-primary);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- App Header -->
+    <div class="app-header">
+        <h5 class="mb-1">Welcome back 👋</h5>
+        <h4 class="fw-bold">Your Learning Dashboard</h4>
+    </div>
+
+    <div class="container my-4 pb-5">
+
+        <!-- Continue Learning -->
+        <h5 class="mb-3">Continue Learning</h5>
+        <div class="course-card mb-3">
+            <img src="https://picsum.photos/400/200?random=1" class="course-thumb" alt="">
+            <h6 class="fw-bold">Modern Web Development</h6>
+            <p class="text-muted small mb-1">By John Doe</p>
+            <div class="progress mb-2">
+                <div class="progress-bar bg-primary" style="width: 60%"></div>
+            </div>
+            <small class="text-muted">60% completed</small>
+        </div>
+
+        <!-- Featured Courses -->
+        <h5 class="mb-3 mt-4">Featured Courses</h5>
+        <div class="row g-3">
+            <div class="col-6">
+                <div class="course-card">
+                    <img src="https://picsum.photos/400/200?random=2" class="course-thumb" alt="">
+                    <h6 class="fw-bold">UI/UX Design</h6>
+                    <p class="text-muted small">12 Lessons</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="course-card">
+                    <img src="https://picsum.photos/400/200?random=3" class="course-thumb" alt="">
+                    <h6 class="fw-bold">Python Basics</h6>
+                    <p class="text-muted small">18 Lessons</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <h5 class="mb-3 mt-4">Categories</h5>
+        <div class="d-flex gap-2 flex-wrap">
+            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">Development</span>
+            <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Design</span>
+            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2">Business</span>
+            <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">Languages</span>
+        </div>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="#" class="active"><i class="fas fa-home"></i>Home</a>
+        <a href="cd.html"><i class="fas fa-book"></i>Courses</a>
+        <a href="index2.html"><i class="fas fa-star"></i>Wishlist</a>
+        <a href="index3.html"><i class="fas fa-user"></i>Profile</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
