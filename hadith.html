@@ -17,18 +17,20 @@
 <body>
     <!-- Topbar (mobile & desktop search) -->
     <div class="topbar d-flex align-items-center justify-content-between">
-        <a href="index.html" class="me-2"><i class="fas fa-arrow-left"></i></a>
-        <h5 class="fw-bold mb-0">ISP</h5>
+        <a href="index.html" class="me-2"><i class="fas fa-arrow-left fa-2x text-secondary"></i></a>
+        <h5 class="fw-bold mb-0 text-success">ഹദീസ്</h5>
+
         <form class="d-flex ms-3" role="search" style="max-width: 300px;">
-            <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
-                aria-label="Search">
-            <button class="btn btn-sm btn-outline-primary"><i class="fas fa-search"></i></button>
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="Search book..." aria-label="Search">
+                <button class="btn btn-success" type="button"><i class="fas fa-search"></i></button>
+            </div>
         </form>
     </div>
 
     <!-- App Header -->
     <div class="app-header text-center page-hero">
-        <h4 class="fw-bold text-success text-tr mt-3">ഹദീസ് ശേഖരങ്ങൾ</h4>
+        <h5 class="fw-bold text-success text-tr mt-3">ഹദീസ് ശേഖരങ്ങൾ</h5>
         <p class="text-muted mb-0">
             Canonical hadith books — authors, scope, and sample narrations. Search, filter, and open any book for
             details.
@@ -59,8 +61,7 @@
                         <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(1)">
                             Details
                         </button>
-                        <a class="btn btn-sm btn-outline-secondary"
-                            href="hadith-show.html">
+                        <a class="btn btn-sm btn-outline-secondary" href="hadith-show.html">
                             Open
                         </a>
                     </div>
@@ -88,8 +89,7 @@
                         <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(2)">
                             Details
                         </button>
-                        <a class="btn btn-sm btn-outline-secondary"
-                            href="hadith-show.html">
+                        <a class="btn btn-sm btn-outline-secondary" href="hadith-show.html">
                             Open
                         </a>
                     </div>
@@ -117,8 +117,7 @@
                         <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(4)">
                             Details
                         </button>
-                        <a class="btn btn-sm btn-outline-secondary"
-                            href="hadith-show.html">
+                        <a class="btn btn-sm btn-outline-secondary" href="hadith-show.html">
                             Open
                         </a>
                     </div>
@@ -131,7 +130,8 @@
 
                         <div class="flex-1" bis_skin_checked="1">
                             <h6 class="text-success text-tr fw-bold m-0">സുനാൻ അബു ദാവൂദ്</h6>
-                            <p class="small text-muted text-tr m-0">ഇമാം അബു ദാവൂദ് (സുലൈമാൻ ഇബ്നു അൽ-അഷ'ആത്ത് അസ്-സിജിസ്ഥാനി)
+                            <p class="small text-muted text-tr m-0">ഇമാം അബു ദാവൂദ് (സുലൈമാൻ ഇബ്നു അൽ-അഷ'ആത്ത്
+                                അസ്-സിജിസ്ഥാനി)
                                 (275H)
                             </p>
                         </div>
@@ -146,8 +146,7 @@
                         <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(5)">
                             Details
                         </button>
-                        <a class="btn btn-sm btn-outline-secondary"
-                            href="hadith-show.html">
+                        <a class="btn btn-sm btn-outline-secondary" href="hadith-show.html">
                             Open
                         </a>
                     </div>
@@ -175,8 +174,7 @@
                         <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(6)">
                             Details
                         </button>
-                        <a class="btn btn-sm btn-outline-secondary"
-                            href="hadith-show.html">
+                        <a class="btn btn-sm btn-outline-secondary" href="hadith-show.html">
                             Open
                         </a>
                     </div>
@@ -204,8 +202,7 @@
                         <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(7)">
                             Details
                         </button>
-                        <a class="btn btn-sm btn-outline-secondary"
-                            href="hadith-show.html">
+                        <a class="btn btn-sm btn-outline-secondary" href="hadith-show.html">
                             Open
                         </a>
                     </div>
@@ -233,8 +230,7 @@
                         <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(8)">
                             Details
                         </button>
-                        <a class="btn btn-sm btn-outline-secondary"
-                            href="hadith-show.html">
+                        <a class="btn btn-sm btn-outline-secondary" href="hadith-show.html">
                             Open
                         </a>
                     </div>
@@ -245,10 +241,10 @@
 
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
+        <a href="quran.html"><i class="fas fa-book-open"></i>Quran</a>
+        <a href="hadith.html" class="active"><i class="fas fa-bars"></i>Hadith</a>
         <a href="index.html"><i class="fas fa-home"></i>Home</a>
-        <a href="quran.html"><i class="fas fa-book"></i>Quran</a>
-        <a href="hadith.html" class="active"><i class="fas fa-list"></i>Hadith</a>
-        <a href="chapters.html"><i class="fas fa-question"></i>Topics</a>
+        <a href="chapters.html"><i class="fas fa-search"></i>Topics</a>
         <a href="#"><i class="fas fa-star"></i>Wishlist</a>
         <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->
     </div>

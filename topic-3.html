@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Amiri:wght@400;700&family=Lateef&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@400;500;700&family=Cairo:wght@400;600;700&family=Markazi+Text:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&display=swap&family=Noto+Sans+Malayalam&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .timeline {
+            position: relative;
+            margin: .5rem auto;
+            padding: .5rem 0;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 3px;
+            background: #dee2e6;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .timeline-item .circle {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #0d6efd;
+            border: 3px solid #fff;
+            z-index: 2;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 46%;
+            background: #fff;
+            border-radius: .75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.2rem;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            left: 54%;
+        }
+
+        .timeline-content h5 {
+            font-weight: 600;
+            margin-bottom: .5rem;
+        }
+
+        .timeline-content p,
+        .timeline-content ul {
+            color: #495057;
+            font-size: .95rem;
+            line-height: 1.6;
+        }
+
+        .timeline-content ul {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        .timeline-content ul li {
+            margin-bottom: .4rem;
+        }
+
+        /* Mobile */
+        @media(max-width:768px) {
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-item .circle {
+                left: 10px;
+                transform: none;
+            }
+
+            .timeline-content {
+                width: 92%;
+                margin-left: 30px !important;
+            }
+
+            .timeline-item:nth-child(even) .timeline-content {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar (mobile & desktop search) -->
+    <div class="topbar d-flex align-items-center justify-content-between">
+        <a href="chapter.html" class="me-2"><i class="fas fa-arrow-left fa-2x text-secondary"></i></a>
+        <h5 class="m-0 text-success text-center">ചരിത്രം</h5>
+        <a href="javascript:void(0);"><i class="fas fa-list fa-2x text-muted" data-bs-toggle="offcanvas"
+                data-bs-target="#overviewPanel"></i></a>
+    </div>
+
+    <div class="app-header page-hero text-center">
+        <h5 class="mb-1 text-dark fw-bold">📜 നബിദിന ചരിത്രം</h5>
+        <p class="text-muted m-0">കാലഘട്ടങ്ങളിലൂടെ നബിദിന (മൗലിദ്) ആഘോഷങ്ങളുടെ വികാസം</p>
+    </div>
+
+    <div class="container my-4 pb-5">
+        <div class="timeline">
+
+            <!-- H0 - H300 -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>ആദ്യകാലം (H0 - H300)</h5>
+                    <p>നബി (ﷺ) കാലത്തും സഹാബിമാർ കാലത്തും നബിദിനം ആഘോഷിച്ചിരുന്നില്ല.</p>
+                    <ul>
+                        <li>നബി ﷺ തിങ്കളാഴ്ച നോമ്പ് എടുത്തു → “ഞാൻ ഈ ദിവസമാണ് ജനിച്ചത്” (മുസ്ലിം: 2747).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Abbasid -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>അബ്ബാസി കാലം (H300 - H500)</h5>
+                    <p>ബാഗ്ദാദിലെ അബ്ബാസി ഖിലാഫത്ത് കാലത്ത് ചിലർ നബിദിനം ഓർക്കാൻ സംഗമങ്ങൾ നടത്തി.</p>
+                    <ul>
+                        <li>ഖുർആൻ വായന, ദുആ</li>
+                        <li>നബി ﷺ യെ പുകഴ്ത്തുന്ന കവിതകൾ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fatimid -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>ഫാത്തിമി കാലം (H500 - H600)</h5>
+                    <p>ഈജിപ്തിലെ ഫാത്തിമികൾ പൊതുവേദിയിൽ ആദ്യമായി നബിദിനം നടത്തി.</p>
+                    <ul>
+                        <li>ഖുർആൻ പാരായണം, പ്രസംഗം</li>
+                        <li>ഭക്ഷണം വിതരണം, ദരിദ്രരെ സഹായിക്കൽ</li>
+                    </ul>
+                    <p><strong>👉 “നബിദിനം പൊതുഉത്സവം” ആദ്യമായി ഇവിടെ</strong></p>
+                </div>
+            </div>
+
+            <!-- Erbil -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>എർബിൽ (H600 - H700)</h5>
+                    <p>1207-ൽ ഗോക്ക്‌ബുരി എർബിലിൽ വലിയ മൗലിദ് നടത്തി.</p>
+                    <ul>
+                        <li>ലക്ഷക്കണക്കിന് ആളുകൾ</li>
+                        <li>ഭക്ഷണം, കവിത, പ്രസംഗം</li>
+                    </ul>
+                    <p><strong>👉 ആദ്യത്തെ വലിയ ഔദ്യോഗിക ആഘോഷം</strong></p>
+                </div>
+            </div>
+
+            <!-- Ottoman -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>ഒട്ടോമാൻ സാമ്രാജ്യം (H900 - H1000)</h5>
+                    <p>1588-ൽ മീലാദിനെ സർക്കാർ അവധിയായി പ്രഖ്യാപിച്ചു.</p>
+                    <p><strong>👉 “Mevlid Kandil” എന്ന പേരിൽ</strong></p>
+                </div>
+            </div>
+
+            <!-- Global -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>H1000 - ഇന്ന് വരെ</h5>
+                    <ul>
+                        <li>ഇന്ത്യ, പാകിസ്ഥാൻ, ടർക്കി, മലേഷ്യ, ആഫ്രിക്ക തുടങ്ങിയിടങ്ങളിൽ വ്യാപിച്ചു</li>
+                        <li>പരിപാടികൾ: ഖുർആൻ, മൗലിദ് കവിത, പൊതുഭക്ഷണം</li>
+                        <li>ചിലർ: ബിദ്അത് ഹസന (നല്ല പുതുമ)</li>
+                        <li>ചിലർ: ബിദ്അത് (ഒഴിവാക്കേണ്ട പുതുമ)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Makkah -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>🕋 മക്ക</h5>
+                    <ul>
+                        <li>H0 - H300: ആഘോഷമില്ല</li>
+                        <li>H900 - H1200: പൊതുആഘോഷം</li>
+                        <li>1924: സൗദി ഭരണത്തിൽ നിരോധനം</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Madinah -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>🌙 മദീന</h5>
+                    <ul>
+                        <li>H0 - H500: ആഘോഷമില്ല</li>
+                        <li>H600 - H700: ചെറിയ സംഗമങ്ങൾ</li>
+                        <li>ഒട്ടോമാൻ കാലത്ത്: വലിയ ആഘോഷം</li>
+                        <li>1924: സൗദി ഭരണത്തിൽ നിരോധനം</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Palestine -->
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <div class="timeline-content">
+                    <h5>🕌 ഫലസ്തീൻ (ഖുദ്സ്)</h5>
+                    <ul>
+                        <li>H0 - H500: ആഘോഷമില്ല</li>
+                        <li>H583: സലാഹുദ്ദീൻ ജറുസലേം വീണ്ടെടുത്തപ്പോൾ → പൊതുആഘോഷം</li>
+                        <li>H604: ഗോക്ക്‌ബുരി വലിയ മൗലിദ് നടത്തി</li>
+                        <li>ഒട്ടോമാൻ കാലത്ത്: സർക്കാർ പിന്തുണയോടെ വലിയ ഉത്സവം</li>
+                        <li>1967 - ഇന്നുവരെ: മത-സാംസ്കാരിക ഐക്യം</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg rounded-circle shadow" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- References Button -->
+        <!-- <span type="button" class="btn btn-success btn-lg rounded-circle shadow" id="btn-references"
+            data-bs-toggle="offcanvas" data-bs-target="#referencesPanel">
+            <i class="fas fa-book-open"></i>
+        </span> -->
+
+        <!-- References Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="referencesPanel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">References</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mb-3">
+                    <h6>📖 Quran</h6>
+                    <blockquote class="blockquote small">
+                        <p>وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانتَهُوا</p>
+                        <footer class="blockquote-footer">Surah Al-Hashr 59:7</footer>
+                    </blockquote>
+                </div>
+                <div class="mb-3">
+                    <h6>🕌 Hadith</h6>
+                    <blockquote class="blockquote small">
+                        <p>“Whoever innovates something in this matter of ours that is not part of it, it will be
+                            rejected.”</p>
+                        <footer class="blockquote-footer">Sahih Bukhari & Muslim</footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <h6>📚 Scholars</h6>
+                    <p class="small text-muted">Imam Malik: “Whatever was not part of the religion at that time will not
+                        be part of the religion today.”</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overview Button -->
+        <!-- <button type="button" class="btn btn-info btn-lg rounded-circle shadow" id="btn-overview"
+            data-bs-toggle="offcanvas" data-bs-target="#overviewPanel">
+            <i class="fas fa-list"></i>
+        </button> -->
+
+        <!-- Overview Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="overviewPanel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Lesson Overview</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h6>📌 Course: Festivals in Islam</h6>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Meelad (Mawlid) <span class="badge bg-primary">Current</span>
+                    </li>
+                    <li class="list-group-item">Eid al-Fitr</li>
+                    <li class="list-group-item">Eid al-Adha</li>
+                    <li class="list-group-item">Laylatul Qadr</li>
+                    <li class="list-group-item">Ramadan</li>
+                </ul>
+
+                <h6>📖 Progress</h6>
+                <div class="progress mb-2">
+                    <div class="progress-bar bg-success" style="width:40%">40%</div>
+                </div>
+                <small class="text-muted">2 of 5 lessons completed</small>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="quran.html"><i class="fas fa-book-open"></i>Quran</a>
+        <a href="hadith.html"><i class="fas fa-bars"></i>Hadith</a>
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="chapters.html" class="active"><i class="fas fa-search"></i>Topics</a>
+        <a href="#"><i class="fas fa-star"></i>Wishlist</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let backToTop = document.getElementById("btn-back-to-top");
+
+        window.addEventListener("scroll", function () {
+            if (document.documentElement.scrollTop > 200) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        // Smooth scroll to top
+        backToTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <style>
+        /* Common circle button style */
+        #btn-back-to-top,
+        #btn-references,
+        #btn-overview {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1050;
+        }
+
+        /* Right side (Back to Top – scroll aware) */
+        #btn-back-to-top {
+            position: fixed;
+            right: 5px;
+            bottom: 80px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        #btn-back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Left side (always visible) */
+        #btn-overview,
+        #btn-references {
+            position: fixed;
+            left: 5px;
+            transition: all 0.3s ease;
+        }
+
+        #btn-overview {
+            bottom: 80px;
+        }
+
+        #btn-references {
+            bottom: 150px;
+        }
+    </style>
+</body>
+
+</html>

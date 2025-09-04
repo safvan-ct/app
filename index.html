@@ -16,7 +16,7 @@
 
 <body>
     <!-- Topbar (mobile & desktop search) -->
-    <div class="topbar d-flex align-items-center justify-content-between">
+    <div class="topbar d-flex align-items-center justify-content-between d-none">
         <h5 class="fw-bold mb-0">ISP</h5>
         <form class="d-flex ms-3" role="search" style="max-width: 300px;">
             <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
@@ -27,7 +27,7 @@
 
     <!-- App Header -->
     <div class="app-header bg-light">
-        <h5 class="mb-1 text-dark">Welcome back 👋</h5>
+        <h5 class="mb-1 text-dark fw-bold">Welcome back 👋</h5>
         <h4 class="fw-bold">
             <span class="text-success">Islamic</span>
             <span class="text-warning">Study Portal</span>
@@ -37,8 +37,8 @@
     <div class="container my-4 pb-5">
         <div class="course-card mb-3 bg-geometry">
             <div class="text-center mx-auto">
-                <h1 class="mb-3 text-tr">എനിക്കു നീ ജ്ഞാനം വര്‍ദ്ധിപ്പിച്ചു തരേണമേ എന്ന് നീ പറയുകയും
-                    ചെയ്യുക.</h1>
+                <h3 class="mb-3 text-tr">എനിക്കു നീ ജ്ഞാനം വര്‍ദ്ധിപ്പിച്ചു തരേണമേ എന്ന് നീ പറയുകയും
+                    ചെയ്യുക.</h3>
 
                 <div class="ayah-card mb-3">
                     <h4 class="text-arabic">
@@ -48,7 +48,7 @@
                 </div>
 
                 <p class="text-muted mb-0">
-                    Quran, Hadith, calendar and subjects — organized for focused, distraction-free learning.
+                    Quran, Hadith, calendar — organized for focused, distraction-free learning.
                 </p>
             </div>
         </div>
@@ -65,26 +65,28 @@
         </div> -->
 
         <!-- Featured Courses -->
-        <h5 class="mb-3 mt-4">Featured Topics</h5>
+        <h5 class="m-0 mt-4 text-success text-center">അടിസ്ഥാന വിഷയങ്ങൾ</h5>
+        <p class="text-center m-0">📖 അറിവ് തേടൂ, വിശ്വാസം വളരും ✨</p>
+        <hr class="m-0 my-2">
         <div class="row g-3">
             <div class="col-6 col-md-4">
                 <div class="course-card">
                     <div class="icon-card">🎉</div>
                     <h6 class="fw-bold"><a href="chapter.html" class="text-dark text-tr">നബിദിനം (റ. അവ്വൽ 12)</a></h6>
-                    <p class="text-muted small m-0">12 Lessons</p>
+                    <p class="text-muted small m-0">3 Lessons</p>
                 </div>
             </div>
             <div class="col-6 col-md-4">
                 <div class="course-card">
                     <div class="icon-card">🎉</div>
                     <h6 class="fw-bold text-tr">മൗലിദ് പാരായണം</h6>
-                    <p class="text-muted small m-0">18 Lessons</p>
+                    <p class="text-muted small m-0">5 Lessons</p>
                 </div>
             </div>
         </div>
 
         <!-- Categories -->
-        <h5 class="mb-3 mt-4">Tags</h5>
+        <h5 class="mb-3 mt-4">പ്രധാന വിഷയങ്ങൾ</h5>
         <div class="d-flex gap-2 flex-wrap">
             <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">Development</span>
             <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Design</span>
@@ -96,10 +98,10 @@
 
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
+        <a href="quran.html"><i class="fas fa-book-open"></i>Quran</a>
+        <a href="hadith.html"><i class="fas fa-bars"></i>Hadith</a>
         <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
-        <a href="quran.html"><i class="fas fa-book"></i>Quran</a>
-        <a href="hadith.html"><i class="fas fa-list"></i>Hadith</a>
-        <a href="chapters.html"><i class="fas fa-question"></i>Topics</a>
+        <a href="chapters.html"><i class="fas fa-search"></i>Topics</a>
         <a href="#"><i class="fas fa-star"></i>Wishlist</a>
         <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->
     </div>

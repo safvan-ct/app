@@ -17,18 +17,20 @@
 <body>
     <!-- Topbar (mobile & desktop search) -->
     <div class="topbar d-flex align-items-center justify-content-between">
-        <a href="hadith.html" class="me-2"><i class="fas fa-arrow-left"></i></a>
-        <h5 class="fw-bold mb-0">ISP</h5>
+        <a href="hadith.html" class="me-2"><i class="fas fa-arrow-left fa-2x text-secondary"></i></a>
+        <h5 class="fw-bold mb-0 text-success">ഹദീസ്</h5>
+
         <form class="d-flex ms-3" role="search" style="max-width: 300px;">
-            <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
-                aria-label="Search">
-            <button class="btn btn-sm btn-outline-primary"><i class="fas fa-search"></i></button>
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="Search chapter..." aria-label="Search">
+                <button class="btn btn-success" type="button"><i class="fas fa-search"></i></button>
+            </div>
         </form>
     </div>
 
     <!-- App Header -->
     <div class="app-header text-center page-hero">
-        <h4 class="fw-bold text-success text-tr mt-3">സഹീഹ് ബുഖാരി — അധ്യായങ്ങൾ</h4>
+        <h5 class="fw-bold text-success text-tr mt-3">സഹീഹ് ബുഖാരി — അധ്യായങ്ങൾ</h5>
         <p class="text-dark m-0 mb-0 text-tr">ഇമാം ബുഖാരി (256H) |
             <span class="text-muted">ഹദീസുകൾ: 7276 • അധ്യായങ്ങൾ: 99</span>
         </p>
@@ -1829,10 +1831,10 @@
 
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
+        <a href="quran.html"><i class="fas fa-book-open"></i>Quran</a>
+        <a href="hadith.html" class="active"><i class="fas fa-bars"></i>Hadith</a>
         <a href="index.html"><i class="fas fa-home"></i>Home</a>
-        <a href="quran.html"><i class="fas fa-book"></i>Quran</a>
-        <a href="hadith.html" class="active"><i class="fas fa-list"></i>Hadith</a>
-        <a href="chapters.html"><i class="fas fa-question"></i>Topics</a>
+        <a href="chapters.html"><i class="fas fa-search"></i>Topics</a>
         <a href="#"><i class="fas fa-star"></i>Wishlist</a>
         <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->
     </div>
