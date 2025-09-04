@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Amiri:wght@400;700&family=Lateef&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@400;500;700&family=Cairo:wght@400;600;700&family=Markazi+Text:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&display=swap&family=Noto+Sans+Malayalam&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Topbar (mobile & desktop search) -->
+    <div class="topbar d-flex align-items-center justify-content-between">
+        <a href="index.html" class="me-2"><i class="fas fa-arrow-left"></i></a>
+        <h5 class="fw-bold mb-0">ISP</h5>
+        <form class="d-flex ms-3" role="search" style="max-width: 300px;">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
+                aria-label="Search">
+            <button class="btn btn-sm btn-outline-primary"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- App Header -->
+    <div class="app-header text-center page-hero">
+        <h4 class="fw-bold text-success text-tr mt-3">ഹദീസ് ശേഖരങ്ങൾ</h4>
+        <p class="text-muted mb-0">
+            Canonical hadith books — authors, scope, and sample narrations. Search, filter, and open any book for
+            details.
+        </p>
+    </div>
+
+    <div class="container my-4 pb-5">
+        <div class="row g-2" bis_skin_checked="1">
+            <div class="col-12 col-sm-6 col-lg-4" bis_skin_checked="1">
+                <div class="course-card d-flex flex-column h-100 justify-content-between" bis_skin_checked="1">
+                    <div class="d-flex align-items-center mb-1" bis_skin_checked="1">
+                        <div class="icon-thumb me-3" bis_skin_checked="1">HB</div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സഹീഹ് ബുഖാരി</h6>
+                            <p class="small text-muted text-tr m-0">ഇമാം ബുഖാരി
+                                (256H)
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted text-tr mb-2">
+                        ഹദീസുകൾ: <strong>7276</strong> •
+                        അധ്യായങ്ങൾ: <strong>99</strong>
+                    </p>
+
+                    <div class="d-flex justify-content-end gap-2" bis_skin_checked="1">
+                        <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(1)">
+                            Details
+                        </button>
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="hadith-show.html">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" bis_skin_checked="1">
+                <div class="course-card d-flex flex-column h-100 justify-content-between" bis_skin_checked="1">
+                    <div class="d-flex align-items-center mb-1" bis_skin_checked="1">
+                        <div class="icon-thumb me-3" bis_skin_checked="1">HB</div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സഹീഹ് മുസ്ലിം</h6>
+                            <p class="small text-muted text-tr m-0">ഇമാം മുസ്ലിം
+                                (261H)
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted text-tr mb-2">
+                        ഹദീസുകൾ: <strong>7564</strong> •
+                        അധ്യായങ്ങൾ: <strong>56</strong>
+                    </p>
+
+                    <div class="d-flex justify-content-end gap-2" bis_skin_checked="1">
+                        <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(2)">
+                            Details
+                        </button>
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="hadith-show.html">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" bis_skin_checked="1">
+                <div class="course-card d-flex flex-column h-100 justify-content-between" bis_skin_checked="1">
+                    <div class="d-flex align-items-center mb-1" bis_skin_checked="1">
+                        <div class="icon-thumb me-3" bis_skin_checked="1">HB</div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ജാമി അൽ-തിർമിധി</h6>
+                            <p class="small text-muted text-tr m-0">ആബു ഇസാ മുഹമ്മദ് അൽ-തിർമിധി
+                                (279H)
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted text-tr mb-2">
+                        ഹദീസുകൾ: <strong>3956</strong> •
+                        അധ്യായങ്ങൾ: <strong>50</strong>
+                    </p>
+
+                    <div class="d-flex justify-content-end gap-2" bis_skin_checked="1">
+                        <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(4)">
+                            Details
+                        </button>
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="hadith-show.html">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" bis_skin_checked="1">
+                <div class="course-card d-flex flex-column h-100 justify-content-between" bis_skin_checked="1">
+                    <div class="d-flex align-items-center mb-1" bis_skin_checked="1">
+                        <div class="icon-thumb me-3" bis_skin_checked="1">HB</div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സുനാൻ അബു ദാവൂദ്</h6>
+                            <p class="small text-muted text-tr m-0">ഇമാം അബു ദാവൂദ് (സുലൈമാൻ ഇബ്നു അൽ-അഷ'ആത്ത് അസ്-സിജിസ്ഥാനി)
+                                (275H)
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted text-tr mb-2">
+                        ഹദീസുകൾ: <strong>5274</strong> •
+                        അധ്യായങ്ങൾ: <strong>43</strong>
+                    </p>
+
+                    <div class="d-flex justify-content-end gap-2" bis_skin_checked="1">
+                        <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(5)">
+                            Details
+                        </button>
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="hadith-show.html">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" bis_skin_checked="1">
+                <div class="course-card d-flex flex-column h-100 justify-content-between" bis_skin_checked="1">
+                    <div class="d-flex align-items-center mb-1" bis_skin_checked="1">
+                        <div class="icon-thumb me-3" bis_skin_checked="1">HB</div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സുനാൻ ഇബ്‍ൻ മാജഹ്</h6>
+                            <p class="small text-muted text-tr m-0">ഇമാം മുഹമ്മദ് ബിൻ യസീദ് ഇബ്ന്‍ മാജഹ് അൽ-ഖാസ്വിനി
+                                (273H)
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted text-tr mb-2">
+                        ഹദീസുകൾ: <strong>4341</strong> •
+                        അധ്യായങ്ങൾ: <strong>39</strong>
+                    </p>
+
+                    <div class="d-flex justify-content-end gap-2" bis_skin_checked="1">
+                        <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(6)">
+                            Details
+                        </button>
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="hadith-show.html">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" bis_skin_checked="1">
+                <div class="course-card d-flex flex-column h-100 justify-content-between" bis_skin_checked="1">
+                    <div class="d-flex align-items-center mb-1" bis_skin_checked="1">
+                        <div class="icon-thumb me-3" bis_skin_checked="1">HB</div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സുന്നാൻ അന-നസാഈ</h6>
+                            <p class="small text-muted text-tr m-0">ഇമാം അഹ്മദ് അൽ-നസാഈ
+                                (303H)
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted text-tr mb-2">
+                        ഹദീസുകൾ: <strong>5761</strong> •
+                        അധ്യായങ്ങൾ: <strong>52</strong>
+                    </p>
+
+                    <div class="d-flex justify-content-end gap-2" bis_skin_checked="1">
+                        <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(7)">
+                            Details
+                        </button>
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="hadith-show.html">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" bis_skin_checked="1">
+                <div class="course-card d-flex flex-column h-100 justify-content-between" bis_skin_checked="1">
+                    <div class="d-flex align-items-center mb-1" bis_skin_checked="1">
+                        <div class="icon-thumb me-3" bis_skin_checked="1">HB</div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മിഷ്‌കാത് അൽ-മസാബിഹ്</h6>
+                            <p class="small text-muted text-tr m-0">ഖാതിബ് അൽ-തബ്രീസി
+                                (741H)
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted text-tr mb-2">
+                        ഹദീസുകൾ: <strong>6293</strong> •
+                        അധ്യായങ്ങൾ: <strong>29</strong>
+                    </p>
+
+                    <div class="d-flex justify-content-end gap-2" bis_skin_checked="1">
+                        <button class="btn btn-sm btn-outline-success btn-open" onclick="openBook(8)">
+                            Details
+                        </button>
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="hadith-show.html">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="quran.html"><i class="fas fa-book"></i>Quran</a>
+        <a href="hadith.html" class="active"><i class="fas fa-list"></i>Hadith</a>
+        <a href="chapters.html"><i class="fas fa-question"></i>Topics</a>
+        <a href="#"><i class="fas fa-star"></i>Wishlist</a>
+        <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

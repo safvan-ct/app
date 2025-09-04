@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduLearn</title>
+    <title>ISP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Amiri:wght@400;700&family=Lateef&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@400;500;700&family=Cairo:wght@400;600;700&family=Markazi+Text:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&display=swap&family=Noto+Sans+Malayalam&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Topbar (mobile & desktop search) -->
     <div class="topbar d-flex align-items-center justify-content-between">
-        <h5 class="fw-bold mb-0">Dashboard</h5>
+        <h5 class="fw-bold mb-0">ISP</h5>
         <form class="d-flex ms-3" role="search" style="max-width: 300px;">
             <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
                 aria-label="Search">
@@ -22,15 +26,34 @@
     </div>
 
     <!-- App Header -->
-    <div class="app-header">
-        <h5 class="mb-1">Welcome back 👋</h5>
-        <h4 class="fw-bold">Your Learning Dashboard</h4>
+    <div class="app-header bg-light">
+        <h5 class="mb-1 text-dark">Welcome back 👋</h5>
+        <h4 class="fw-bold">
+            <span class="text-success">Islamic</span>
+            <span class="text-warning">Study Portal</span>
+        </h4>
     </div>
 
     <div class="container my-4 pb-5">
+        <div class="course-card mb-3 bg-geometry">
+            <div class="text-center mx-auto">
+                <h1 class="mb-3 text-tr">എനിക്കു നീ ജ്ഞാനം വര്‍ദ്ധിപ്പിച്ചു തരേണമേ എന്ന് നീ പറയുകയും
+                    ചെയ്യുക.</h1>
 
-        <!-- Continue Learning -->
-        <h5 class="mb-3">Continue Learning</h5>
+                <div class="ayah-card mb-3">
+                    <h4 class="text-arabic">
+                        <span dir="rtl" class="mt-2">﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</span>- <em
+                            class="text-muted small">20:114</em>
+                    </h4>
+                </div>
+
+                <p class="text-muted mb-0">
+                    Quran, Hadith, calendar and subjects — organized for focused, distraction-free learning.
+                </p>
+            </div>
+        </div>
+
+        <!-- <h5 class="mb-3">Continue Learning</h5>
         <div class="course-card mb-3">
             <img src="https://picsum.photos/400/200?random=1" class="course-thumb" alt="">
             <h6 class="fw-bold">Modern Web Development</h6>
@@ -39,29 +62,29 @@
                 <div class="progress-bar bg-primary" style="width: 60%"></div>
             </div>
             <small class="text-muted">60% completed</small>
-        </div>
+        </div> -->
 
         <!-- Featured Courses -->
-        <h5 class="mb-3 mt-4">Featured Courses</h5>
+        <h5 class="mb-3 mt-4">Featured Topics</h5>
         <div class="row g-3">
             <div class="col-6 col-md-4">
                 <div class="course-card">
-                    <img src="https://picsum.photos/400/200?random=2" class="course-thumb" alt="">
-                    <h6 class="fw-bold">നബിദിനം (റ. അവ്വൽ 12)</h6>
-                    <p class="text-muted small">12 Lessons</p>
+                    <div class="icon-card">🎉</div>
+                    <h6 class="fw-bold"><a href="chapter.html" class="text-dark text-tr">നബിദിനം (റ. അവ്വൽ 12)</a></h6>
+                    <p class="text-muted small m-0">12 Lessons</p>
                 </div>
             </div>
             <div class="col-6 col-md-4">
                 <div class="course-card">
-                    <img src="https://picsum.photos/400/200?random=3" class="course-thumb" alt="">
-                    <h6 class="fw-bold">മൗലിദ് പാരായണം</h6>
-                    <p class="text-muted small">18 Lessons</p>
+                    <div class="icon-card">🎉</div>
+                    <h6 class="fw-bold text-tr">മൗലിദ് പാരായണം</h6>
+                    <p class="text-muted small m-0">18 Lessons</p>
                 </div>
             </div>
         </div>
 
         <!-- Categories -->
-        <h5 class="mb-3 mt-4">Categories</h5>
+        <h5 class="mb-3 mt-4">Tags</h5>
         <div class="d-flex gap-2 flex-wrap">
             <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2">Development</span>
             <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Design</span>
@@ -74,8 +97,8 @@
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
         <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
-        <a href="#"><i class="fas fa-book"></i>Quran</a>
-        <a href="#"><i class="fas fa-list"></i>Hadith</a>
+        <a href="quran.html"><i class="fas fa-book"></i>Quran</a>
+        <a href="hadith.html"><i class="fas fa-list"></i>Hadith</a>
         <a href="chapters.html"><i class="fas fa-question"></i>Topics</a>
         <a href="#"><i class="fas fa-star"></i>Wishlist</a>
         <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->

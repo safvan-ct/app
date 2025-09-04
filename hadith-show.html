@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Amiri:wght@400;700&family=Lateef&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@400;500;700&family=Cairo:wght@400;600;700&family=Markazi+Text:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&display=swap&family=Noto+Sans+Malayalam&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Topbar (mobile & desktop search) -->
+    <div class="topbar d-flex align-items-center justify-content-between">
+        <a href="hadith.html" class="me-2"><i class="fas fa-arrow-left"></i></a>
+        <h5 class="fw-bold mb-0">ISP</h5>
+        <form class="d-flex ms-3" role="search" style="max-width: 300px;">
+            <input class="form-control form-control-sm me-2" type="search" placeholder="Search courses..."
+                aria-label="Search">
+            <button class="btn btn-sm btn-outline-primary"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-- App Header -->
+    <div class="app-header text-center page-hero">
+        <h4 class="fw-bold text-success text-tr mt-3">സഹീഹ് ബുഖാരി — അധ്യായങ്ങൾ</h4>
+        <p class="text-dark m-0 mb-0 text-tr">ഇമാം ബുഖാരി (256H) |
+            <span class="text-muted">ഹദീസുകൾ: 7276 • അധ്യായങ്ങൾ: 99</span>
+        </p>
+    </div>
+
+    <div class="container my-4 pb-5">
+        <section class="row g-2">
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = 'hadith-show-1.html'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="1" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;">
+                            1
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വഹി (പ്രവചനങ്ങൾ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '2'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="2" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            2
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വിശ്വാസം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '3'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="3" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            3
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അറിവ്</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '4'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="4" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            4
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വുദൂ (അബ്ദസ്‌)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '5'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="5" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            5
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഗുസ്ൽ (കുളി)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '6'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="6" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            6
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മാസികകാലം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '7'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="7" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;">
+                            7
+                        </div>
+
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">തയ്യമ്മും (പൊടിയാൽ കൈകാലുകൾ തുടയ്ക്കൽ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '8'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="8" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            8
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">നമസ്‌കാരം (സലാത്)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '9'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="9" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            9
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">നമസ്‌കാര സമയങ്ങൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '10'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="10" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            10
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അദാൻ (നമസ്‌കാര വിളി)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '11'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="11" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            11
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അദാൻ (സുഫത്തു സലാത്)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '12'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="12" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            12
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ജുമുഅ നമസ്‌കാരം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '13'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="13" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            13
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഭീതി നമസ്‌കാരം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '14'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="14" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            14
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">രണ്ട് ഉത്സവങ്ങൾ (ഈദ്)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '15'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="15" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            15
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വിതർ നമസ്‌കാരം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '16'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="16" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            16
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മഴയ്ക്കായുള്ള ദുആ (ഇസ്തിസ്‌കാ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '17'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="17" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            17
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഗ്രഹണം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '18'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="18" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            18
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഖുർആൻ വായനയിൽ സജ്ദ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '19'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="19" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            19
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">നമസ്‌കാരം ചുരുക്കൽ (അൽ-തഖ്സീർ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '20'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="20" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            20
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">രാത്രി നമസ്‌കാരം (തഹജ്ജുദ്)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '21'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="21" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            21
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മക്കയിലും മദീനയിലും നമസ്‌കാരത്തിന്റെ മഹത്വം
+                            </h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '22'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="22" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            22
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">നമസ്‌കാരത്തിൽ ചെയ്യുന്ന പ്രവൃത്തികൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '23'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="23" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            23
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">നമസ്‌കാരത്തിലെ മറവ്</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '24'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="24" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            24
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ജനാസ (ശവസംസ്കാരം)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '25'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="25" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            25
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സകാത്ത് (ബന്ധ്യമായ ദാന നികുതി)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '26'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="26" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            26
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഹജ്ജ് (തിരുപ്പ്രയാണം)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '27'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="27" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            27
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഉംറ (ചെറിയ തീർത്ഥാടനം)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '28'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="28" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            28
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഹജ്ജ് പൂർത്തിയാക്കാനാകാത്ത തീർത്ഥാടകർ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '29'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="29" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            29
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഹജ്ജിൽ വേട്ടയാടിയതിനുള്ള ശിക്ഷ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '30'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="30" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            30
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മദീനയുടെ മഹത്വം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '31'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="31" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            31
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">നോമ്പ്</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '32'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="32" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            32
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">റമളാനിൽ രാത്രി നമസ്‌കാരം (തറാവീഹ്)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '33'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="33" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            33
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ലൈലത്തുൽ ഖദറിന്റെ മഹത്വം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '34'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="34" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            34
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഇഅ്തികാഫ് (മസ്ജിദിൽ ധ്യാനത്തിനായി കഴിയുക)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '35'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="35" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            35
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വ്യാപാരം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '36'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="36" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            36
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മുന്നൂറായി വില നൽകി പിന്നീട് സാധനം കൈപ്പറ്റുന്ന
+                                വിൽപ്പന
+                                (അസ്-സലം)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '37'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="37" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            37
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ശുഫഅ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '38'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="38" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            38
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">കൂലി</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '39'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="39" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            39
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">കടം മറ്റൊരാളിലേക്ക് മാറ്റൽ (അൽ-ഹവാല)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '40'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="40" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            40
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">കഫാല</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '41'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="41" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            41
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പ്രതിനിധാനം, അധികാരം, മുഖാന്തരം വ്യാപാരം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '42'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="42" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            42
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">കൃഷി</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '43'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="43" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            43
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വെള്ള വിതരണം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '44'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="44" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            44
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">കടം, കടം തീർക്കൽ, സ്വത്ത് തടങ്കൽ, ദിവാലി</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '45'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="45" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            45
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഖുസൂമാത്ത് (വിവാദങ്ങൾ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '46'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="46" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            46
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">കണ്ടെത്തിയ നഷ്ടപ്പെട്ട വസ്തുക്കൾ (ലുകത)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '47'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="47" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            47
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പീഡനം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '48'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="48" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            48
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പങ്കാളിത്തം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '49'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="49" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            49
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പണയം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '50'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="50" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            50
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അടിമകളെ മോചിപ്പിക്കൽ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '51'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="51" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            51
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മകാതിബ്</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '52'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="52" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            52
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഉപഹാരങ്ങൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '53'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="53" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            53
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സാക്ഷികൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '54'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="54" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            54
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സമാധാനം സ്ഥാപിക്കൽ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '55'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="55" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            55
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വ്യവസ്ഥകൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '56'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="56" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            56
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വസിയ്യത്ത്</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '57'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="57" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            57
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അല്ലാഹുവിന്റെ വഴിയിൽ ജിഹാദ്</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '58'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="58" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            58
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഗനീമത്തിലെ അഞ്ചിൽ ഒന്ന് അല്ലാഹുവിന്റെ വഴിക്ക്
+                                (ഖുമുസ്)
+                            </h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '59'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="59" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            59
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ജിസ്യയും സമാധാന കരാറുകളും</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '60'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="60" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            60
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സൃഷ്ടിയുടെ തുടക്കം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '61'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="61" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            61
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പ്രവാചകർ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '62'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="62" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            62
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പ്രവാചകനും സഹാബികളും ഉള്ള മഹത്വം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '63'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="63" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            63
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പ്രവാചകന്റെ സഹാബികൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '64'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="64" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            64
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അൻസാർ (മദീനയിലെ സഹായികൾ) മഹത്വം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '65'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="65" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            65
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പ്രവാചകൻ നയിച്ച യുദ്ധങ്ങൾ (അൽ-മഘാസി)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '66'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="66" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            66
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഖുർആൻ വ്യാഖ്യാനം – പ്രവാചകൻ പറഞ്ഞത്</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '67'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="67" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            67
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഖുർആന്റെ മഹത്വം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '68'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="68" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            68
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വിവാഹം (നിക്കാഹ്)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '69'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="69" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            69
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വിവാഹമോചനം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '70'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="70" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            70
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">കുടുംബ പോഷണം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '71'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="71" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            71
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഭക്ഷണം, ഭക്ഷണങ്ങൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '72'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="72" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            72
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ജനനസമയത്ത് ചെയ്യുന്ന ബലി (അഖീഖ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '73'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="73" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            73
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വേട്ടയാടൽ, അറുക്കൽ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '74'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="74" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            74
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഈദുല്‍ അദ്ഹാ ബലി</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '75'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="75" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            75
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പാനീയങ്ങൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '76'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="76" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            76
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">രോഗികൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '77'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="77" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            77
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വൈദ്യശാസ്ത്രം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '78'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="78" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            78
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വസ്ത്രധാരണം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '79'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="79" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            79
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മനോഹരമായ ശീലം, പെരുമാറ്റം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '80'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="80" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            80
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അനുമതി തേടൽ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '81'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="81" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            81
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ദുആകൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '82'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="82" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            82
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഹൃദയം മൃദുവാക്കുക</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '83'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="83" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            83
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഖദർ (ദൈവീക വിധി)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '84'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="84" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            84
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പ്രതിജ്ഞകളും നേർച്ചകളും</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '85'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="85" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            85
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">നേർച്ചകൾ പാലിക്കാത്തതിനുള്ള പരിഹാരം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '86'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="86" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            86
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വാരിസാവകാശം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '87'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="87" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            87
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഹുദൂദ് (അല്ലാഹുവിന്റെ ശിക്ഷാനിയമങ്ങൾ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '88'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="88" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            88
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">അൽ-മുഹാരിബീൻ (യുദ്ധക്കാർ)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '89'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="89" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            89
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">രക്തപരിഹാരം (ദിയത്ത്)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '90'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="90" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            90
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">മതം വിടുന്നവർ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '91'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="91" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            91
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ബലമായി പറഞ്ഞ വാക്കുകൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '92'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="92" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            92
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വഞ്ചന</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '93'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="93" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            93
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സ്വപ്നങ്ങളുടെ വ്യാഖ്യാനം</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '94'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="94" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            94
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">പ്രളയകാലവും ലോകാവസാനവും</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '95'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="95" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            95
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">വിധികൾ (അഹ്കാം)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '96'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="96" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            96
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ആഗ്രഹങ്ങൾ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '97'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="97" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            97
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">സത്യസന്ധരിൽ നിന്നുള്ള വിവരങ്ങൾ അംഗീകരിക്കൽ</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '98'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="98" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            98
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">ഖുർആനും സുന്നത്തും പിടിച്ചുപറ്റുക</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 all-chapters"
+                onclick="window.location.href = '99'"
+                style="cursor: pointer" bis_skin_checked="1">
+                <div class="course-card d-flex justify-content-between align-items-center flex-row rounded-0" style="padding: .75rem .75rem;"
+                    data-surah="99" bis_skin_checked="1">
+                    <div class="d-flex gap-3 align-items-center" bis_skin_checked="1">
+                        <div class="rounded-circle bg-light border text-dark d-flex justify-content-center align-items-center fw-bold fs-6 flex-shrink-0"
+                            style="width: 36px; height: 36px;" bis_skin_checked="1">
+                            99
+                        </div>
+
+                        <div class="flex-1" bis_skin_checked="1">
+                            <h6 class="text-success text-tr fw-bold m-0">തൗഹീദ് (അല്ലാഹുവിന്റെ ഏകത്വം)</h6>
+                            <p class="text-muted m-0 small"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="quran.html"><i class="fas fa-book"></i>Quran</a>
+        <a href="hadith.html" class="active"><i class="fas fa-list"></i>Hadith</a>
+        <a href="chapters.html"><i class="fas fa-question"></i>Topics</a>
+        <a href="#"><i class="fas fa-star"></i>Wishlist</a>
+        <!-- <a href="#"><i class="fas fa-user"></i>Profile</a> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
